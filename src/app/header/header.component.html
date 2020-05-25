@@ -3,10 +3,10 @@
     <a href="#" class="navbar-brand">Recipe Book</a>
       <ul class="nav navbar-nav">
           <li class="nav-item" routerlinkactive="active current">
-              <a routerlink="#" class="nav-link"><b>Recipes</b></a>
+              <a routerlink="#" (click)="onSelect('recipe')" class="nav-link"><b>Recipes</b></a>
           </li>
           <li class="nav-item" routerlinkactive="active current">
-              <a routerlink="#" class="nav-link"><b>Shopping List</b></a>
+              <a routerlink="#" (click)="onSelect('shoppingList')"class="nav-link"><b>Shopping List</b></a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
